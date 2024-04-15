@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu .menu__button {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.menu .menu__list {
+  position: absolute;
+  width: 10rem;
+  background-color: white;
+  list-style-type: none;
+  border: solid 1px black;
+  box-shadow: 10px 10px 10px 0px rgba(72, 72, 72, 1);
+  padding: 0.5rem;
+}
+
+.menu .menu__link {
+  display: inline-block;
+  padding-block: 0.5rem;
+}
+
+.result__email {
+  width: 50%;
+  border: solid 1px black;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}

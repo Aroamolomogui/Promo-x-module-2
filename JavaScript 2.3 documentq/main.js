@@ -8,13 +8,15 @@ paragraph.innerHTML = "Hola Mundo";
 
 //para acceder al valor concreto no al elemento html hay que poner esto nombre.innerHTML
 
-const nombre = document.querySelector(".name");
-console.log(nombre);
+// const nombre = document.querySelector(".name");
+// console.log(nombre);
 
 const title = document.querySelector(".title");
 
 /**estas dos cosas son equivalente
- * la primera aopcion estas rescribiendo el texto de forma manual y la parte varibnale seria la del nombre de la persona que depnde de la lista que tengamo
+ * la primera opcion estas rescribiendo el texto de forma manual y la parte varibnale seria la del nombre de la persona que depnde de la lista que tengamos
+ *
+ * en la segunda estas poneindo lo que tuviera el titulo y le estas añadiendo ñlo que tenga el nombre
  */
 
 title.innerHTML = "la adalaber seleccionada es " + nombre.innerHTML;
@@ -22,3 +24,5 @@ title.innerHTML = "la adalaber seleccionada es " + nombre.innerHTML;
 console.log(title.innerHTML);
 
 title.innerHTML = title.innerHTML + nombre.innerHTML;
+
+//Cambia el nombre para que sea el segundo li//

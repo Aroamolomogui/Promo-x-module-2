@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplos de eventos</title>
+    <script
+      src="https://kit.fontawesome.com/66349fc88a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://beta.adalab.es/resources/stylesheets/all.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body class="page">
+    <header class="header mb-1">
+      <nav class="menu">
+        <button
+          class="menu__button js_menu"
+          title="Pulsa para mostrar el menú de opciones"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="menu__list hidden js_menu_list">
+          <li><a class="menu__link" href="#">¿Quienes somos?</a></li>
+          <li><a class="menu__link" href="#">¿A donde vamos?</a></li>
+          <li><a class="menu__link" href="#">¿Pero qué es esto?</a></li>
+          <li><a class="menu__link" href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <h1 class="title">Ejemplos de eventos</h1>
+    </header>
+    <main class="mt-1">
+      <section class="mb-1">
+        <h2>Saludar</h2>
+        <form class="form js_form" action="#">
+          <label for="name" class="form__label">Nombre:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__input-text js_name"
+            placeholder="Ej: MariCarmen"
+          />
+          <input
+            type="submit"
+            value="Mostrar"
+            class="form__btn js_btn_mostrar"
+          />
+          <span class="text--primary js_span_name"
+            ><!-- Bienvenida MariCarmen! --></span
+          >
+        </form>
+      </section>
+
+      <section class="mb-1 js_form_data">
+        <h2>Generador de emails</h2>
+        <form action="#" class="form js_form">
+          <label for="fullname" class="form__label display-block">
+            Nombre:
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              class="form__input-text"
+            />
+          </label>
+          <label for="promo" class="form__label display-block">
+            Promo:
+            <input
+              type="text"
+              name="promo"
+              id="promo"
+              class="form__input-text"
+            />
+          </label>
+          <label for="teacher" class="form__label display-block">
+            Tutora:
+            <input
+              type="text"
+              name="teacher"
+              id="teacher"
+              class="form__input-text"
+            />
+          </label>
+          <input type="submit" value="enviar" class="form__btn" />
+        </form>
+        <div class="text--primary result__email">
+          <p>Querida <span class="js_fullname_result"></span>,</p>
+          <p>
+            Le escribimos a para informala de que ha sido aceptada su solicitud.
+            Estamos orgullosas de que forme parte de nuestra promo ___.
+          </p>
+          <p>Atentamente, su tutora</p>
+          <p>____</p>
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
